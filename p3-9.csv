@@ -1,0 +1,10 @@
+0,CombatZoneResize,150,251,479,391,
+0,CombatZoneSpeed,240,,,,
+0,HeartTeleport,320,304,,,
+0.5,SET,Loop,120,,,
+0,SUB,Loop,$Loop,1,,
+0,RND,Ang,640,,,
+0,BoneSpurV,$Ang,$Ang,200,1000,0
+0,BoneSpurH,$Ang,$Ang,200,1000,0
+0.1,JMPNZ,5,$Loop,,,
+1,EndAttack,,,,,

@@ -1,0 +1,12 @@
+0,CombatZoneResize,150,251,479,391,,,,
+0,CombatZoneSpeed,240,,,,,,,
+0,HeartTeleport,320,304,,,,,,
+0,GasterBlaster,0,300,300,300,300,90,0,0.33
+0,SET,Loop,114514,,,,,,
+0,SUB,Loop,$Loop,,,,,,
+0.1,GetHP,GetHP,s,,,,,,
+0,JMPL,4,$s,200,,,,,
+0.1,GetHP,GetHP,d,,,,,,
+0,JMPL,12,$d,50,,,,,
+0.1,JMPNZ,5,$Loop,,,,,,
+1,EndAttack,,,,,,,,
